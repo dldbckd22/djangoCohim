@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><!-- Latest compiled and minified CSS -->
+    {% load static %}
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- slick -->
+    <link rel="stylesheet" type="text/css" href="{% static 'plugin/slick/slick.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'plugin/slick/slick-theme.css' %}" />
+    <script type="text/javascript" src="{% static 'plugin/slick/slick.js'%}"></script>
+
+    <link rel="stylesheet" href="{% static 'css/common.css' %}">
+    <script type="text/javascript" src="{% static 'js/common.js' %}"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-light">
+        <a class="navbar-brand text-body" href="#">Logo</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navb">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navb">
+          <ul class="navbar-nav mr-auto ">
+            <li class="nav-item">
+              <a class="nav-link text-body" href="javascript:void(0)">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-body" href="javascript:void(0)">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-body disabled" href="javascript:void(0)">Disabled</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search">
+            <button class="btn btn-success my-2 my-sm-0" type="button">Search</button>
+          </form>
+        </div>
+    </nav>
+    <div class="container">
+      <div class="slide" id="slider-div"  >
+		    <div class="slide_content1">1</div>
+		    <div class="slide_content2">2</div>
+		    <div class="slide_content3">3</div>
+      </div>
+      <div class="search_dropdown_bar_container">
+        <div class="dropdown_bar">
+
+        </div>
+        <!-- 검색 -->
+        <div>
+          <section>
+            <div class= "searchbutton">
+              <input class="search" type="text" placeholder="맞춤형 상품검색 ">
+              <button type="button" class = "btn" value="내용접기" onclick="folder()">
+              <img id= "btni" src="{% static 'assets/images/arrow.png' %}" alt=""></button>
+              <button id= "bmag" type="button" value="확대"><img class= "mag" src="{% static 'assets/images/mag.png' %}" alt=""></button>
+            </div>
+            <br><br>
+            <p id="data"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </section>
+        </div>
+      </div>
+    </div>
+</body>
+</html>

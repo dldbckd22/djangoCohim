@@ -1,0 +1,19 @@
+*{margin:0;padding:0;}
+ul,li{list-style:none;}
+
+/* slide */
+.slide{height:200px;}
+.slide div{height: 100%;}
+.slide .slide_content1{background:#faa;}
+.slide .slide_content2{background:#afa;}
+.slide .slide_content3{background:#aaf;}
+.slick-dots{
+    margin-bottom: 40px;
+}
+.slick-prev{
+    margin-left: 30px;
+    z-index: 10;
+}
+.slick-next{
+margin-right: 30px;
+}
